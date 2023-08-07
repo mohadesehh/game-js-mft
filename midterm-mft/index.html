@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حدس و گمان</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+   
+    <div id="error-box"></div>
+    <div id="login-form">
+        <div class="login-container">
+            <input type="text" name="" id="username"  placeholder="لطفا نام خود را وارد کنید...">
+            <br>
+            <input type="password" name="" id="password" placeholder="لطفا رمز خود را وارد نمایید...">
+            <br>
+            <input type="email" name="" id="email" placeholder="لطفا ایمیل خود را وارد نمایید...">
+            <br>
+            <button id="login" onclick="login()">ثبت نام / ورود</button>
+        </div>
+    </div>
+
+    <div id="container-start"  >
+        <div>
+            <p class="ptag" id="ptag">برای شروع بازی بر روی دکمه زیر کلیک کنید</p>
+            <button id="start" onclick="start()">شروع</button>
+        </div>
+       
+    </div>
+    <div id="game-page">
+        <div>
+            <span id="score" >امتیاز :</span>
+            <span id="incorrect"></span>
+        </div>
+      
+        
+        <div>
+            <button id="hint-button" onclick="hint()">راهنما</button>
+        </div>
+       
+        <div id="question-container">
+            <div id="question-box">سوال:
+                <h5 id="question"></h5>
+            </div>
+            <hr id="hr">
+            <div id="answer-box">پاسخ:
+                <div id="answer"></div>
+            </div>
+        </div>
+            <div id="button-container">
+                <div id="nextbutton"></div>
+            </div>
+           <div class="box">
+            <div id="alphabet-box">
+                <button id="checkbutton" value="ا" class="alphabet" onclick="word()">ا</button>
+                <button id="checkbutton" value="ب" class="alphabet" onclick="word()">ب</button>
+                <button id="checkbutton" value="پ" class="alphabet" onclick="word()">پ</button>
+                <button id="checkbutton" value="ت" class="alphabet" onclick="word()">ت</button>
+                <button id="checkbutton" value="ث" class="alphabet" onclick="word()">ث</button>
+                <button id="checkbutton" value="ج" class="alphabet" onclick="word()">ج</button>
+                <button id="checkbutton" value="چ" class="alphabet" onclick="word()">چ</button>
+                <button id="checkbutton" value="ح" class="alphabet" onclick="word()">ح</button>
+                <button id="checkbutton" value="خ" class="alphabet" onclick="word()">خ</button>
+                <button id="checkbutton" value="د" class="alphabet" onclick="word()">د</button>
+                <button id="checkbutton" value="ذ" class="alphabet" onclick="word()">ذ</button>
+                <button id="checkbutton" value="ر" class="alphabet" onclick="word()">ر</button>
+                <button id="checkbutton" value="ز" class="alphabet" onclick="word()">ز</button>
+                <button id="checkbutton" value="ژ" class="alphabet" onclick="word()">ژ</button>
+                <button id="checkbutton" value="س" class="alphabet" onclick="word()">س</button>
+                <button id="checkbutton" value="ش" class="alphabet" onclick="word()">ش</button>
+                <button id="checkbutton" value="ص" class="alphabet" onclick="word()">ص</button>
+                <button id="checkbutton" value="ض" class="alphabet" onclick="word()">ض</button>
+                <button id="checkbutton" value="ط" class="alphabet" onclick="word()">ط</button>
+                <button id="checkbutton" value="ظ" class="alphabet" onclick="word()">ظ</button>
+                <button id="checkbutton" value="ع" class="alphabet" onclick="word()">ع</button>
+                <button id="checkbutton" value="غ" class="alphabet" onclick="word()">غ</button>
+                <button id="checkbutton" value="ف" class="alphabet" onclick="word()">ف</button>
+                <button id="checkbutton" value="ق" class="alphabet" onclick="word()">ق</button>
+                <button id="checkbutton" value="ک" class="alphabet" onclick="word()">ک</button>
+                <button id="checkbutton" value="گ" class="alphabet" onclick="word()">گ</button>
+                <button id="checkbutton" value="ل" class="alphabet" onclick="word()">ل</button>
+                <button id="checkbutton" value="م" class="alphabet" onclick="word()">م</button>
+                <button id="checkbutton" value="ن" class="alphabet" onclick="word()">ن</button>
+                <button id="checkbutton" value="و" class="alphabet" onclick="word()">و</button>
+                <button id="checkbutton" value="ه" class="alphabet" onclick="word()">ه</button>
+                <button id="checkbutton" value="ی" class="alphabet" onclick="word()">ی</button>
+            </div>
+            <div id="win-popup" style="display: none;">
+                <img src="./image/coin1.png" alt="You Win" id="restart-button" onclick="restart()">
+                <p class="pimage">تبریک <br> بردی...</p> 
+              </div>
+            <!-- <div id="start-again" >برای شروع مجدد اینجا کلیک کن</div> -->
+           </div>
+          
+    
+</body>
+</html>
